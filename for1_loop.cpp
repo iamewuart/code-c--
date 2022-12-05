@@ -1,15 +1,16 @@
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 int main(){
-    int i, start, end;
-
-    start = 10;
-    end = 1;
+    int i, j;
     
  
-    for(i =  start; i >= end; i--)
-        cout << i << endl;
-                                                                                                                                                                                                                                                                                               
+    for(i =  1; i <= 91; i += 10){
+        for(j = i; j <= i+9; j += 1){
+            cout<< setw(4) << j;
+        }
+        cout<< endl;
+    }                                                                                                                                                                                                                                                                                          
     return 0;
 }
